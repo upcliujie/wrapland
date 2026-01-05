@@ -34,7 +34,7 @@ ecm_setup_version(PROJECT
 set(REQUIRED_QT_VERSION 6.4.0)
 set(KDE_COMPILERSETTINGS_LEVEL "5.84")
 
-find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Concurrent Gui)
+find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Concurrent Gui GuiPrivate)
 
 find_package(Wayland 1.18 COMPONENTS Client Server)
 set_package_properties(Wayland PROPERTIES TYPE REQUIRED)
